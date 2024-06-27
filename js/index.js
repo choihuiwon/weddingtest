@@ -13752,7 +13752,7 @@ function n0() {
         N("div", {
           className: "share-by-kakaotalk",
           children: N("button", {
-            // onClick: l,
+            onClick: l,
             children: "카카오톡 공유하기",
           }),
         }),

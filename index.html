@@ -56,43 +56,6 @@
 
     <!-- Style -->
     <link rel="stylesheet" href="./css/index.css" />
-
-    <!-- kakao sdk 호출 -->
-    <!-- <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.1.0/kakao.min.js"></script> -->
-
-    <script type="text/javascript">
-      // SDK를 초기화 합니다. 사용할 앱의 JavaScript 키를 설정해 주세요.
-      window.Kakao.init("c65c62ec7c5f21430c578bb06d6f2604");
-
-      // SDK 초기화 여부를 판단합니다.
-      console.log(window.Kakao.isInitialized());
-
-      function kakaoShare() {
-        window.Kakao.Link.sendDefault({
-          objectType: "feed",
-          content: {
-            title: "최희원 ♥ 박진혁, 결혼합니다!",
-            description: "8월 25일 11시 라온제나 강남 8F 플로렌스홀",
-            imageUrl: "https://choihuiwon.github.io/wedding/images/title.jpg",
-            link: {
-              mobileWebUrl: "https://choihuiwon.github.io/wedding",
-              webUrl: "https://choihuiwon.github.io/wedding",
-            },
-          },
-          buttons: [
-            {
-              title: "웹으로 보기",
-              link: {
-                mobileWebUrl: "https://choihuiwon.github.io/wedding",
-                webUrl: "https://choihuiwon.github.io/wedding",
-              },
-            },
-          ],
-          // 카카오톡 미설치 시 카카오톡 설치 경로이동
-          installTalk: true,
-        });
-      }
-    </script>
   </head>
 
   <body>
