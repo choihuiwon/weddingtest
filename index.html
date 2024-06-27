@@ -62,13 +62,13 @@
 
     <script type="text/javascript">
       // SDK를 초기화 합니다. 사용할 앱의 JavaScript 키를 설정해 주세요.
-      Kakao.init("c65c62ec7c5f21430c578bb06d6f2604");
+      window.Kakao.init("c65c62ec7c5f21430c578bb06d6f2604");
 
       // SDK 초기화 여부를 판단합니다.
-      console.log(Kakao.isInitialized());
+      console.log(window.Kakao.isInitialized());
 
       function kakaoShare() {
-        Kakao.Link.sendDefault({
+        window.Kakao.Link.sendDefault({
           objectType: "feed",
           content: {
             title: "최희원 ♥ 박진혁, 결혼합니다!",
